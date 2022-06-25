@@ -1,0 +1,26 @@
+{
+  "name": "team-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose __tests__/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bvatuvei/team-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bvatuvei/team-generator/issues"
+  },
+  "homepage": "https://github.com/Bvatuvei/team-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
+}

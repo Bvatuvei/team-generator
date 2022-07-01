@@ -180,19 +180,11 @@ function mainMenu() {
 function buildHtml() {
     console.log("build Team", team)
     // Use fs (file system) to write html file by passing our team array through TeamHtml
-    fs.writeFile('./dist/index.html', TeamHtml, err => {
-        // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
-        if (err) {
-            reject(err);
-            // return out of the function here to make sure the Promise doesn't accidentally execute the resolve() function as well
-            return;
-        }
-        // if everything went well, resolve the Promise and send the successful data to the `.then()` method
-        resolve({
-            ok: true,
-            message: 'File created!'
-        });
-    });
-}
+    fs.writeFileSync('./dist/index.html', TeamHtml, err => {
+      if (err) {
+        console.log(err);
+      }
+    }
+)}
 
 start();

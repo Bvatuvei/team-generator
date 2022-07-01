@@ -180,7 +180,7 @@ function mainMenu() {
 function buildHtml() {
     console.log("build Team", team)
     // Use fs (file system) to write html file by passing our team array through TeamHtml
-    fs.writeFileSync('./dist/index.html', TeamHtml, err => {
+    fs.writeFile('./dist/index.html', TeamHtml(team), err => {
       if (err) {
         console.log(err);
       }
